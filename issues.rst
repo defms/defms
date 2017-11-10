@@ -29,7 +29,7 @@ How to manage if an email is encrypted or not ?
 - what kind of emails should be public:
   * public mailing lists
   * opensource development notification emails
-  * NewsLetters
+  * newsLetters
   * 
 
 - what kind of emails should be encrypted ?
@@ -37,6 +37,9 @@ How to manage if an email is encrypted or not ?
   * all mails from legacy email system not mentioned above
   * everything else.
 
-- [?] defms would understand a metadata flag 
+- [?] defms would understand a 'backward compatibility metadata' to actively
+  prevent encryption. (otherwise all email from legacy will be encrypted by 
+  the gateway)
 
 - [?] 
+
