@@ -1,9 +1,7 @@
-An abstract to DEFMS 
-====================
 For a distributed, encrypted and free email delivery network
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Let's have a closer look at our current implementation of our global email 
+Let's have a closer look at the current implementation of our global email 
 delivery system.
 
 It scaled out from the very early stage of our network while all mail 
@@ -11,7 +9,7 @@ addresses was summed up in a paper book to our current multi-billion addresses
 directory quite impressively, the workload and delivery effort is mostly 
 shared across the few biggest current IT and telecom companies and the 
 required bandwidth and data effort is duplicated between all sender, receivers 
-and intermediates of the message.
+and intermediates of the transmission.
 Content encryption or signature is still a marginal practice and while 
 normally not accessible by a random tiers, the relevant intermediates and 
 providers do not hesitate to monitor and analyze our day to day exchanges.
@@ -32,12 +30,18 @@ consistency and the immutability in time of his exchanges with someone.
 An entirely distributed, partly encrypted and free mail exchange system would 
 allow us to communicate directly with the concerned receivers without 
 restrictions of size, number, consistency or availability of the exchanged 
-messages. Applications are numerous, like [...] but more importantly this will 
-bring the 'email' to a new status of [...]
+messages. Applications are numerous but more importantly this will help us 
+reducing the total amount of storage and bandwith required by mail exchanges.
 
 As encryption, peer to peer and data immutability are already widespread 
-principles one pain-point is in the compatibility with our existing systems 
-and protocols.
-[Insert obstacles and solutions]
+principles one remaining pain-point is in the compatibility with our existing 
+systems and protocols. Such a compatibility with actual mail protocols will be 
+achieved by non-ditributed gateway servers, this long-term temporary solution 
+will encrypt and forward all email from standard MX systems to and from DEFMS.
 
-[Insert evidence that we’re not just blowing hot air]
+As of today, we are already starting to use IPFS as a backend solution for our 
+personal emails. This idea starts as a hook, as a few lines of codes between 
+two well known protocols but as it creates this connection between our 
+everyday mail clients and a blockchain based, peer2peer ditributed file 
+system, I wish and believe that it will grow in usage and in complexity over 
+the years to come.
