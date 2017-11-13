@@ -22,4 +22,3 @@ Steps
 * [function] encrypt mail with pgp
 
 * [function] decrypt own mail
-

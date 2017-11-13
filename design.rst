@@ -34,8 +34,6 @@ Receive an email from legacy email protocl (MX to DEFMS)
         | IPFS | 
         '------' 
 
-comments:
-
 
 Send an email to legacy email system (DEFMS to MX)
 --------------------------------------------------
@@ -58,8 +56,6 @@ Send an email to legacy email system (DEFMS to MX)
         | SMTP |                  | IPFS |
         '------'                  '------'
 
-comments:
-
 
 Send an email to a DEFMS mailbox (DEFMS to DEFMS)
 -------------------------------------------------
@@ -81,7 +77,3 @@ Send an email to a DEFMS mailbox (DEFMS to DEFMS)
     .--------------. 
     | defms-daemon | 
     '--------------' 
-
-comments:
-
-

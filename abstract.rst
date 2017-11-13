@@ -1,5 +1,3 @@
-An abstract to DEFMS 
-====================
 For a distributed, encrypted and free email delivery network
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -47,7 +45,3 @@ two well known protocols but as it creates this connection between our
 everyday mail clients and a blockchain based, peer2peer ditributed file 
 system, I wish and believe that it will grow in usage and in complexity over 
 the years to come.
-
-Please protect yourself and stay free.
-
-epheo
