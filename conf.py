@@ -48,7 +48,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'DEFMS'
-copyright = '2017, epheo'
+copyright = '2017, def.ms'
 author = 'epheo'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -70,7 +70,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -93,22 +93,25 @@ html_theme_options = {
     'logo': 'defms.jpg',
     'github_user': 'defms',
     'github_repo': 'defms',
-    'extra_nav_links' : {'Sources': 'https://github.com/defms/', 'IPFS': 'https://ipfs.io/'},
+    'extra_nav_links': {'DEFMS Source Code': 'https://github.com/defms/',
+                        'IPFS API Reference': 'https://ipfs.io/docs/api/'},
     # 'github_banner': 'true',
-    # 'font_family' : 'akkurta,Inconsolata,monospace',
-    # 'head_font_family' : 'akkurta,Inconsolata,monospace',
-    # 'code_font_family' : 'akkurta,Inconsolata,monospace',
-    # 'page_width': '900px',
-    # 'base_bg': '#2D2D2D',
-    # 'body_bg': '#2D2D2D',
-    # 'narrow_sidebar_bg': '#CCC',
-    # 'sidebar_search_button': '#2D2D2D',
-    # 'body_text': '#FFF',
-    # 'sidebar_text': '#FFF',
-    # 'sidebar_header': '#FFF',
-    # 'sidebar_link': '#FFF',
-    # 'link': '#FFF',
-    # 'link_hover': '#CCC',
+    'font_family': 'akkurta,Inconsolata,monospace',
+    'head_font_family': 'akkurta,Inconsolata,monospace',
+    'code_font_family': 'akkurta,Inconsolata,monospace',
+    'code_bg': '#2D2D2D',
+    'code_text': '#FFF',
+    'page_width': '900px',
+    'base_bg': '#2D2D2D',
+    'body_bg': '#2D2D2D',
+    'narrow_sidebar_bg': '#CCC',
+    'sidebar_search_button': '#2D2D2D',
+    'body_text': '#FFF',
+    'sidebar_text': '#FFF',
+    'sidebar_header': '#FFF',
+    'sidebar_link': '#FFF',
+    'link': '#FFF',
+    'link_hover': '#CCC',
 
 }
 
@@ -121,7 +124,7 @@ html_theme_options = {
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['sphinx/static']
+html_static_path = ['sphinx/theme/alabaster/static']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -133,8 +136,8 @@ html_sidebars = {
         'about.html',
         'navigation.html',
         'relations.html',
-        'searchbox.html',
-        'donate.html',
+        # 'searchbox.html',
+        # 'donate.html',
     ]
 }
 
@@ -149,19 +152,15 @@ htmlhelp_basename = 'DEFMSdoc'
 
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
-    #
     # 'papersize': 'letterpaper',
 
     # The font size ('10pt', '11pt' or '12pt').
-    #
     # 'pointsize': '10pt',
 
     # Additional stuff for the LaTeX preamble.
-    #
     # 'preamble': '',
 
     # Latex figure (float) alignment
-    #
     # 'figure_align': 'htbp',
 }
 
@@ -169,7 +168,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'DEFMS.tex', 'DEFMS Documentation',
+    (master_doc, 'DEFMS.tex', 'Distributed Encrypted Free Mail System',
      'epheo', 'manual'),
 ]
 
@@ -179,7 +178,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'defms', 'DEFMS Documentation',
+    (master_doc, 'defms', 'Distributed Encrypted Free Mail System',
      [author], 1)
 ]
 
@@ -190,10 +189,6 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'DEFMS', 'DEFMS Documentation',
-     author, 'DEFMS', 'Distributed Encrypted Free Mail System',
-     'Please protect yourself and stay free'),
+    (master_doc, 'DEFMS', 'Distributed Encrypted Free Mail System',
+     author, 'epheo', 'Please protect yourself and stay free'),
 ]
-
-
-

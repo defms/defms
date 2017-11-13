@@ -9,6 +9,8 @@ DEFMS
 
    abstract.rst
    design.rst
+   defms-gateway.rst
+   defms-daemon.rst
    steps.rst
    issues.rst
 

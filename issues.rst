@@ -14,7 +14,7 @@ How to distribute Mailbox in a secure and scalable way?
 - [?] orbit-db is a distributed database over ipfs,
   * can't be unique bc not scalable
   * having one database per every thread or mailing list shared accros 
-  relevent stakeholders may be to explore.
+  relevent stakeholders may be to explore
   * https://github.com/orbitdb/orbit-db/blob/master/examples/keyvalue.js
 
 - [?] ipfs api now propose pub/sub functions that can be usefull
@@ -33,7 +33,7 @@ How to manage if an email is encrypted or not ?
 - what kind of emails should be encrypted ?
   * all personal communication
   * all mails from legacy email system not mentioned above
-  * everything else.
+  * everything else
 
 - [?] defms would understand a 'backward compatibility metadata' to actively
   prevent encryption. (otherwise all email from legacy will be encrypted by 
@@ -41,3 +41,11 @@ How to manage if an email is encrypted or not ?
 
 - [?] 
 
+
+
+Migration
+---------
+
+- * configure getmail to retreive other accounts
+  * read from defms
+  * eventually configure auto-delete on original mailbox
