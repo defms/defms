@@ -1,5 +1,5 @@
-DEFMS Daemon
-============
+Daemon
+======
 
 Requirements
 ------------

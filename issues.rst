@@ -21,6 +21,8 @@ How to distribute Mailbox in a secure and scalable way?
   * more dev
   * https://github.com/orbitdb/orbit-db-pubsub
 
+
+
 How to manage if an email is encrypted or not ?
 -----------------------------------------------
 

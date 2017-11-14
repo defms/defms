@@ -1,5 +1,5 @@
-DEFMS Gateway
-=============
+Gateway
+=======
 
 Functioning
 -----------
