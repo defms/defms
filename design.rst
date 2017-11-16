@@ -56,9 +56,23 @@ Destination Address Fields ( rfc5322#section-3.6.3 )
     bcc             =   "Bcc:" [address-list / CFWS] CRLF
 
 
+Informational Fields ( rfc5322#section-3.6.5 )
+
+.. code::
+
+   subject         =   "Subject:" unstructured CRLF
+   comments        =   "Comments:" unstructured CRLF
+   keywords        =   "Keywords:" phrase \*("," phrase) CRLF
+
+
 The Identification Fields ( rfc5322#section-3.6.3 ) are not implemented here. 
 Instead, the thread object contains a list of sorted hash pointing to the 
 different messages.
+
+
+mail objects
+""""""""""""
+
 
 
 
