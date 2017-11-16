@@ -1,5 +1,3 @@
-DEFMS
-=====
 
 .. include:: abstract.rst
 
@@ -7,6 +5,7 @@ DEFMS
    :maxdepth: 2
    :caption: ---
 
+   abstract.rst
    design.rst
    issues.rst
    steps.rst

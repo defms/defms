@@ -7,7 +7,7 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = DEFMS
 SOURCEDIR     = .
-BUILDDIR      = sphinx/build
+BUILDDIR      = build
 
 # Put it first so that "make" without argument is like "make help".
 help:

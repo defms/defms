@@ -1,39 +1,9 @@
 
-Design reflexions
-=================
+Design
+======
 
-Database
---------
-
-Database replication model
-""""""""""""""""""""""""""
-
-- | [ ] ditributed centralized mono db
-  | (1 database owning all mailboxes)
-
-  * security issues
-  * scalability issue
-  * no replication issue
-
-
-- | [ ] user centric mailbox database
-  | (1 database per users mailbox)
-
-  * replication issues (replication only between user device and service
-    provider is not enough)
-  * no scalability issue
-  * easier security
-  * sounds shitty
-
-
-- | [X] thread centric database
-  | (1 database per email thread)
-
-  * reduced footprint
-  * replication is ideal (between sender and receivers for all exchanges)
-  * more complex to implement
-  * more security possibilities (more complex?)
-
+Objects
+-------
 
 thread objects
 """"""""""""""
@@ -73,6 +43,35 @@ different messages.
 mail objects
 """"""""""""
 
+
+data replication model
+""""""""""""""""""""""
+
+- | [ ] ditributed centralized mono db
+  | (1 database owning all mailboxes)
+
+  * security issues
+  * scalability issue
+  * no replication issue
+
+
+- | [ ] user centric mailbox database
+  | (1 database per users mailbox)
+
+  * replication issues (replication only between user device and service
+    provider is not enough)
+  * no scalability issue
+  * easier security
+  * sounds shitty
+
+
+- | [X] thread centric database
+  | (1 database per email thread)
+
+  * reduced footprint
+  * replication is ideal (between sender and receivers for all exchanges)
+  * more complex to implement
+  * more security possibilities (more complex?)
 
 
 
