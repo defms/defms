@@ -1,37 +1,63 @@
 Gateway
 =======
 
-Functioning
------------
+Function
+--------
 
 The defms gateway can retreive emails from an external POP or IMAP account 
-provided by another third-party or DEFMS itself.
+provided by a third-party.
 
-It use Getmail as retriever.
-`<https://wiki.archlinux.org/index.php/Getmail>`_
-
-The defms gateway can only use an external SMTP service to send emails to the 
-usual mail network.
-
-It use EXIM as a forwarding
+The gateway can also receive SMTP emails and forward them to the right 
+Mailbox. In this scenario, defms replace the imap or pop protocol.
 
 
-DEFMS legacy email addresses
-----------------------------
+Libraries
+---------
 
-If you have a def.ms mail address and still wish to receive and send legacy 
-emails we provide usual POP/IMAP and SMTP service integrated with our gateway.
+`<https://godoc.org/github.com/ipfs/go-ipfs>`_
 
-Emails are deleted from the server as soon as gathered by the gateway and
-written in IPFS.
+`<https://github.com/NerdGGuy/go-imap>`_
 
-* use DEFMS SMTP servers
+`<https://golang.org/pkg/net/smtp/>`_
 
-  - EXIM mail `<https://wiki.archlinux.org/index.php/Exim>`_
-  - Rate limiter
+`<https://golang.org/pkg/net/mail/>`_
 
-* use DEFMS POP/IMAP servers
 
-  - Dovecot `<https://wiki.archlinux.org/index.php/Dovecot>`_
-  - Rate limiter
+Flow
+----
 
+.. code::
+   
+                               .-------------------.  
+                               | external mailbox  | 
+                               '-------------------' 
+                                         |   
+                                        \ /  
+       .-------------------.   .---------'---------.                   
+       |   external smtp   |   |   external imap   |                   
+       '-------------------'   '-------------------'                   
+                 |                       |   
+                \ /                     \ /  
+    .------------'-----------------------'------------.
+    |  .---------'---------.   .---------'---------.  | 
+    |  |    go net/smtp    |   |    go-imap lib    |  |                
+    |  '-------------------'   '-------------------'  |                
+    |            '-----------.-----------'            |
+    |                        |                        | 
+    |                       \ /                       |
+    |              .---------'---------.              |
+    |              |    go net/mail    |              |
+    |              '-------------------'              |
+    |                        |                        | 
+    |                       \ /                       |
+    |              .---------'---------.              |
+    |              |      go-ipfs      |              |
+    |              '-------------------'              |
+    '-------------------------------------------------'
+                                               defms-gw
+
+
+DEFMS email addresses
+---------------------
+
+@def.ms
