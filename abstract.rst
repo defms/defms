@@ -45,6 +45,5 @@ will encrypt and forward all email from standard MX systems to and from DEFMS.
 As of today, we are already starting to use IPFS as a backend solution for our 
 personal emails. This idea starts as a hook, as a few lines of codes between 
 two well known protocols but as it creates this connection between our 
-everyday mail clients and a blockchain based, peer2peer ditributed file 
-system, I wish and believe that it will grow in usage and in complexity over 
-the years to come.
+everyday mail clients and a peer2peer ditributed file system, I wish and 
+believe that it will grow in usage and in complexity over the years to come.
